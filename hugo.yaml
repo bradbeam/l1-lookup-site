@@ -1,0 +1,42 @@
+baseURL: /
+languageCode: en-us
+title: Reimagined Database
+enableGitInfo: true
+
+menu:
+  main:
+    - name: "Download"
+      url: ""
+      weight: 1
+#  - name: "Discord"
+#    url: "https://discord.gg/xxx"
+#    weight: 2
+
+refLinksErrorLevel: WARNING
+
+params:
+  #Enable offline search with Lunr.js
+  offlineSearch: true
+  offlineSearchSummaryLength: 70
+  offlineSearchMaxResults: 15
+
+  markmap:
+    enable: true
+
+  ui:
+    sidebar_search_disable: true
+    ul_show: 1
+    sidebar_menu_compact: true
+
+    ## https://github.com/gohugoio/hugo/issues/8918#issuecomment-903314696
+    #sidebar_cache_limit: 1
+
+    feedback:
+      enable: false
+
+module:
+  imports:
+    - path: github.com/google/docsy
+    - path: github.com/google/docsy/dependencies
+
+theme: github.com/google/docsy
